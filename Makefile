@@ -1,6 +1,6 @@
 all:
 	@npm install -d
-	@cp scripts/githooks/* .git/hooks/
+	@cp .scripts/githooks/* .git/hooks/
 	@chmod -R +x .git/hooks/
 
 test:
