@@ -1,0 +1,24 @@
+{
+    "name": "node-boilerplate",
+    "version": "0.1.0",
+    "description": "A boilerplate for node.js with nodeunit, nodelint, express, and other goodies",
+    "keywords": ["boilerplate", "unit test", "lint", "jslint", "express"],
+    "repository": "",
+    "author": "Paul Armstrong <paul@paularmstrongdesigns.com>",
+    "dependencies": {
+        "express": "0.7.2"
+    },
+    "devDependencies": {
+        "nodelint": "0.4.0",
+        "nodeunit": "0.5.3"
+    },
+    "main": "server",
+    "engines": {
+        "node": ">= 0.4.1"
+    },
+    "scripts": {
+        "all": "make",
+        "lint": "make lint",
+        "test": "make test"
+    }
+}
