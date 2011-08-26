@@ -6,7 +6,7 @@
     "repository": "",
     "author": "Paul Armstrong <paul@paularmstrongdesigns.com>",
     "dependencies": {
-        "express": "0.7.2"
+        "express": "2.4.6"
     },
     "devDependencies": {
         "nodelint": "0.4.0",
