@@ -1,5 +1,5 @@
 var express = require('express'),
-    template = require('node-t'),
+    swig = require('swig'),
     config = require('./config/config-app'),
     _ = require('underscore'),
     app = express.createServer();
@@ -19,8 +19,10 @@ app.use(function (req, res) {
     res.render('404', { status: 404 });
 });
 
-app.register('.html', template);
-template.init({ root: config.viewDirectory });
+app.register('.html', swig);
+swig.init({
+    root: config.viewDirectory
+});
 app.set('views', config.viewDirectory);
 app.set('view engine', 'html');
 app.set('view options', {

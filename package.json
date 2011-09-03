@@ -6,7 +6,8 @@
     "repository": "",
     "author": "Paul Armstrong <paul@paularmstrongdesigns.com>",
     "dependencies": {
-        "express": "2.4.6"
+        "express": "2.4.6",
+        "swig": ">= 0.1.3"
     },
     "devDependencies": {
         "nodelint": "0.4.0",
@@ -17,8 +18,6 @@
         "node": ">= 0.4.1"
     },
     "scripts": {
-        "all": "make",
-        "lint": "make lint",
-        "test": "make test"
+        "test": "make lint && make test"
     }
 }
