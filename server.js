@@ -48,9 +48,9 @@ function controllerAction(name, action, fn) {
             if (format) {
                 if (format === 'json') {
                     return res.send(data, { 'Content-Type': 'application/json' }, res.status | 200);
-                } else {
-                    throw new Error('unsupported format "' + format + '"');
                 }
+
+                throw new Error('unsupported format "' + format + '"');
             }
 
             if (data.hasOwnProperty('template') && data.template) {

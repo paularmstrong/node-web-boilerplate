@@ -6,16 +6,17 @@
     "repository": "",
     "author": "Paul Armstrong <paul@paularmstrongdesigns.com>",
     "dependencies": {
-        "express": "2.4.6",
-        "swig": ">= 0.1.3"
+        "express": "2.5.11",
+        "underscore": "1.4.1",
+        "swig": ">= 0.12.0"
     },
     "devDependencies": {
-        "nodelint": "0.4.0",
-        "nodeunit": "0.5.3"
+        "nodelint": "0.6.2",
+        "nodeunit": "0.7.4"
     },
     "main": "server",
     "engines": {
-        "node": ">= 0.4.1"
+        "node": ">= 0.6.0"
     },
     "scripts": {
         "test": "make lint && make test"
